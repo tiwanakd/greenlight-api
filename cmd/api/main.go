@@ -16,9 +16,12 @@ import (
 	_ "github.com/lib/pq"
 	"github.com/tiwanakd/greenlight-api/internal/data"
 	"github.com/tiwanakd/greenlight-api/internal/mailer"
+	"github.com/tiwanakd/greenlight-api/internal/vcs"
 )
 
-const version = "1.0.0"
+var (
+	version = vcs.Version()
+)
 
 type config struct {
 	port int
