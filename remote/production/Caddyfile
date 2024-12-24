@@ -1,0 +1,8 @@
+{
+	email karandeep.tiwana@outlook.com
+}
+
+greenlight-api.com {
+	respond /debug/* "Not Pemitted" 403
+	reverse_proxy localhost:4000
+}
